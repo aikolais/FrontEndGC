@@ -1,11 +1,15 @@
 import React from 'react'
-import './App.css';
 
-import Login from '../src/pages/Login'
+import Routa from './routes/routes'
+
+import Login from './pages/Login'
+
+
 
 function App() {
   return (
     <div className="App">
+      {/* <Routa /> */}
       <Login />
     </div>
   );
