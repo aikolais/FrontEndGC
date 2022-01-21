@@ -3,3 +3,9 @@
   width: 95%;
   margin-left: 40px;
 }
+
+@media (max-width: 600px) {
+  .teste { 
+     margin-left: 100px;
+  }
+}

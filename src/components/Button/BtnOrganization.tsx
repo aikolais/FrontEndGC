@@ -1,8 +1,11 @@
 import * as React from "react";
 import { Icon } from '@fluentui/react/lib/Icon';
 
+import { initializeIcons } from "@fluentui/react";
+
 import './styles.css';
 
+initializeIcons();
 
 const BtnOrganization = (props: any) => {
 
