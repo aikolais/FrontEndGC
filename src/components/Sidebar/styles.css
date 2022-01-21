@@ -1,0 +1,24 @@
+/* .sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    height: 100%;
+    background-color: #26262c;
+    color: #fff;
+} */
+
+
+.sidebar { 
+  padding: 5px;
+  box-shadow: 0 0 3px #d8d3d3;
+  height: 100%;
+  width: 15%;
+  position: absolute;
+  top: 42px;
+  background-color: black;
+  margin-top: 5vh;
+}
