@@ -1,5 +1,6 @@
 import axios,{AxiosRequestConfig} from 'axios';
 import { GetUserLocalStorage } from '../context/AuthProvider/util';
+import {useNavigate } from 'react-router-dom';
 
 export const Api = axios.create({
     baseURL : 'http://grc.greendocs.net/api/'
@@ -23,5 +24,16 @@ Api.interceptors.request.use(
         return config;
     }, 
     function (error) {
+        return Promise.reject(error);
+});
+
+Api.interceptors.response.use(
+    function (config: AxiosRequestConfig) {
+        return config;
+    }, 
+    function (error) {
+        const navegate = useNavigate();
+        navegate("/login");
+
         return Promise.reject(error);
 });
