@@ -1,0 +1,11 @@
+.HomeComp {
+
+margin: auto;
+width: 90%;
+}
+
+@media screen and (min-width: 768px) {
+    .HomeComp {
+text-align: center;
+}
+}

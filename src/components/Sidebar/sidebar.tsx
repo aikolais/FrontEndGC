@@ -7,8 +7,7 @@ import { MdWorkspacesOutline } from "react-icons/md";
 import { BsChevronDoubleLeft, BsChevronDoubleRight } from "react-icons/bs";
 
 
-
-import './styles.css';
+import './Sidebar.css';
 
 interface SidebarProps {
   onChange?: (event: React.MouseEvent, isChecked?: boolean) => void;

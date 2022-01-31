@@ -1,6 +1,7 @@
 import React from 'react';
 import { Outlet } from 'react-router-dom';
 import { useAuth } from "../../context/AuthProvider/useAuth"
+import Hamb from '../../navbar/Hamb';
 import Navbar from '../../navbar/Navbar';
 import SideBar from '../Sidebar/sidebar';
 
@@ -16,7 +17,6 @@ const ILayoutProtected: React.FunctionComponent<ILayoutComponentProps> = (props)
     return (
         <div>
             <Navbar />
-            <h1>Bem vindo</h1>
             <SideBar isCheckedInitial={false}/>
             <Outlet />
         </div>
