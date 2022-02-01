@@ -1,5 +1,4 @@
 import React, {useState} from "react";
-import UIButton from '../../Button/BtnOrganization';
 import { initializeIcons } from "@fluentui/react";
 import { useAuth } from "../../../context/AuthProvider/useAuth"
 import {useNavigate } from 'react-router-dom';
@@ -33,6 +32,7 @@ const LoginComp = (props: any) => {
 
     return (
         <div className="user-login">
+
             <h1 className="user-login__title">Use seus dados para acessar:</h1>
             <form className="login" autoComplete="nope"  onSubmit={handleSubmit}>
                 <div className="login--form__user">
@@ -43,9 +43,17 @@ const LoginComp = (props: any) => {
                 <button className="btn-login__user" type="submit">Entrar</button>
                 </div>
             </form>
+
+            <div className="remember">
+            <input id="remember" type="checkbox" name="remember" value={email} placeholder="Insira seu e-mail cadastrado" onChange={e => setEmail(e.target.value)} autoComplete="off"/>
+            <label htmlFor="remember" id="remember">Lembrar de mim</label>
+            </div>
+
             <p className="lost__password">
                 <a href="/">Esqueceu sua senha?</a>
             </p>
+
+            
         </div>
     );
 }

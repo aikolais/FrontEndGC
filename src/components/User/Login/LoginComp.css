@@ -1,4 +1,4 @@
-body {
+.user-login {
     background: #114D88;
 
 }
@@ -28,7 +28,8 @@ h1 {
 }
 
 #email-label,
-#password-label {
+#password-label, 
+#remember {
     color: white;
     margin-bottom: 8px;
     line-height: 1.8125rem;
@@ -41,7 +42,7 @@ h1 {
 .btn-login__user {
     width: 100%;
     max-width: 300px;
-    height: 25px;
+    height: 35px;
     margin-left: auto;
     margin-right: auto;
     background-color: #3B3B3B;
@@ -71,11 +72,8 @@ h1 {
     text-decoration: underline;
 }
 
-#email:focus,
-#password:focus,
-#email:hover,
-#password:hover {
-    outline: none;
-    transform: scale(1.1);
-    box-shadow: 0 6px 12px rgba(30, 60, 90, 0.2)
+.remember {
+    margin-top: 20px;
+    text-align: center;
+
 }
